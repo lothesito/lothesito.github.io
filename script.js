@@ -40,6 +40,12 @@ function mostrarTexto(){
     boton_copiar.style.display = "inline"
 }
 
+function mostrarImagen(){
+    document.getElementById("munheco").style.display = "inline";
+    document.getElementById("mensaje-munheco1").style.display = "inline";
+    document.getElementById("mensaje-munheco2").style.display = "inline";
+}
+
 function animarCuadro(){
     let munheco = document.getElementById("munheco").style.display = "none";
     let msg_01 = document.getElementById("mensaje-munheco1").style.display = "none";
@@ -49,7 +55,8 @@ function animarCuadro(){
 function encriptar(){
     let textoCapturado = document.getElementById("texto-de-ingreso").value;
     if(textoCapturado == ''){
-        alert("Escriba algo por favor")
+        mostrarImagen()
+        ocultarTexto()
     }
     else{
         let mensaje = textoCapturado.toLowerCase()
@@ -66,7 +73,8 @@ function encriptar(){
 function desencriptar(){
     let textoCapturado = document.getElementById("texto-de-ingreso").value;
     if(textoCapturado == ''){
-        alert("Escriba algo por favor")
+        mostrarImagen()
+        ocultarTexto()
     }
     else{
         let mensaje = textoCapturado.toLowerCase()
