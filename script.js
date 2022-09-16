@@ -1,7 +1,6 @@
 var boton_encriptar = document.getElementById("boton-encriptar");
 var boton_desencriptar = document.getElementById("boton-desencriptar");
 var boton_copiar = document.getElementById("boton-copiar");
-var cuadro_texto = document.getElementById("mensaje-no-encontrado")
 var c = 0
 var llave = {
     a:"ai",
@@ -21,13 +20,18 @@ var llaveInversa = {
 }
 
 function ocultarImagen(){
-    document.getElementById("mensaje-no-encontrado").style.display = "none";
+    document.getElementById("munheco").style.display = "none";
+    document.getElementById("mensaje-munheco1").style.display = "none";
+    document.getElementById("mensaje-munheco2").style.display = "none";
+
+
 }
 
 function ocultarTexto(){
     document.getElementById("texto-capturado").style.display = "none";
     boton_copiar.style.display = "none"
 }
+
 
 ocultarTexto()
 
@@ -37,7 +41,9 @@ function mostrarTexto(){
 }
 
 function animarCuadro(){
-    cuadro_texto 
+    let munheco = document.getElementById("munheco").style.display = "none";
+    let msg_01 = document.getElementById("mensaje-munheco1").style.display = "none";
+    let msg_02 = document.getElementById("mensaje-munheco2").style.display = "none"; 
 }
 
 function encriptar(){

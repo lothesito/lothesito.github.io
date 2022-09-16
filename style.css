@@ -2,14 +2,21 @@ body{
     font-family: 'Inter', sans-serif;
     background: #F3F5FC;
 }
+.logo-alura{
+    position: absolute;
+    left: 190px;
+    top: 30px;
+
+}
+
 
 #texto-de-ingreso{
 /* Ingrese el texto aqui */
     position: absolute;
-    width: 577px;
-    height: 400px;
+    width: 570px;
+    height: 500px;
     left: 300px;
-    top: 120px;
+    top: 80px;
     resize: none;
 
     font-family: 'Inter', sans-serif;
@@ -32,12 +39,7 @@ body{
     outline:none
 }
 
-.logo-alura{
-    position: absolute;
-    left: 190px;
-    top: 30px;
 
-}
 
 .admiracion{
     /* Vector */
@@ -50,6 +52,8 @@ body{
 .admiracion+p{
     color:#495057;
     left:325px;
+    top:626px;
+    font-size: 0.8em;
     
 }
 
@@ -68,15 +72,16 @@ body{
     left:300px;
     right: 30px;
     font-size: 15px;
-    transition: 1000ms;
+    transition: 100ms;
 }
 
 #boton-encriptar:hover{
-    color: #E6E6E6;
-    background: #0f4d99;
-    border: 1px solid #0f4d99;
+    color: #ffffffe0;
     font-size: 16px;
 }
+
+
+
 
 #boton-desencriptar{
     text-align: center;
@@ -93,7 +98,7 @@ body{
     left:640px;
     right: 30px;
     font-size: 15px;
-    transition: 950ms;
+    transition: 100ms;
 
 }
 
@@ -105,35 +110,39 @@ body{
 }
 
 
-
 #rectangulo-texto{
     position: absolute;
     width: 325px;
     height: 700px;
     left: 1000px;
-    top:20px;
+    top: 10px;
     /* White */
-    padding: 5px;
+    padding: 15px;
     background: #FFFFFF;
     /* shadow */
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 28px;
+    line-height: 1.3;
 }
 #munheco{
     position: absolute;
-    top: 0px; 
+    top: -55px;
+    bottom: 0px; 
     width: 90%;
     height: 90%;
     right: 15px;
     object-fit: contain;   
+    transition: 100ms;
 }
-.mensaje-munheco1{
+
+
+#mensaje-munheco1{
     position: absolute;
     right: 3px;
-    top: 440px;
+    top: 420px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 
     /* or 29px */
     word-wrap:break-word;
@@ -145,11 +154,11 @@ body{
     padding: 30px;
 }
 
-.mensaje-munheco2{
+#mensaje-munheco2{
     position: absolute;
     width: 336px;
     height: 48px;
-    top: 530px;
+    top: 520px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -168,7 +177,11 @@ body{
 
 #texto-capturado{
     position: absolute;
-    padding: 30px;
+    word-wrap: break-word;
+    margin: 20px;
+    width: 300px;
+    right: 5px;
+    line-height: 1.4;
 }
 #boton-copiar{
     text-align: center;
@@ -179,24 +192,43 @@ body{
     position: absolute;
     box-sizing: border-box;
     border: 1px solid #0A3871;
-    padding: 16px;
-    top: 640px;
+    padding: 15px;
+    top: 650px;
     left: 30px;
     right: 30px;
     font-size: 15px;
-    transition: 900ms;
+    transition: 200ms;
 }
 
 #boton-copiar:hover{
     color: #082e5d;
     background: #DDDDDD;
+}
+
+#boton-copiar:active{
+    color: #082e5d;
+    background: #DDDDDD;
     border: 1px solid #082e5c;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 13px;
+    left: 40px;
+    right: 40px;
+
 }
 
 footer{
     position: absolute;
-    bottom: 0px;
-    top: 720px;
-    left: 10px
+    top: 635px;
+    left: 50px
+}
+.linkedin img,.github img{
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+footer p{
+    position: relative;
+    bottom: 10px;
+    margin-left: 10px;
 }
