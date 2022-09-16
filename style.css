@@ -1,0 +1,202 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+}
+
+#texto-de-ingreso{
+/* Ingrese el texto aqui */
+    position: absolute;
+    width: 577px;
+    height: 400px;
+    left: 300px;
+    top: 120px;
+    resize: none;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    border: none;
+    background: #F3F4FC;
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+}
+#texto-de-ingreso::placeholder{
+    color:#0A3871;
+}
+
+#texto-de-ingreso:focus{
+    border: none;
+    outline:none
+}
+
+.logo-alura{
+    position: absolute;
+    left: 190px;
+    top: 30px;
+
+}
+
+.admiracion{
+    /* Vector */
+    position: absolute;
+    top: 625px;
+    left:300px;
+    right: 30px;
+}
+
+.admiracion+p{
+    color:#495057;
+    left:325px;
+    
+}
+
+#boton-encriptar{
+    text-align: center;
+    background: #0A3871;
+    border-radius: 20px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    padding: 16px;
+    width: 290px;
+    top: 660px;
+    left:300px;
+    right: 30px;
+    font-size: 15px;
+    transition: 1000ms;
+}
+
+#boton-encriptar:hover{
+    color: #E6E6E6;
+    background: #0f4d99;
+    border: 1px solid #0f4d99;
+    font-size: 16px;
+}
+
+#boton-desencriptar{
+    text-align: center;
+    border-radius: 20px;
+    background-color: #D8DFE8;
+    font-family: 'Inter';
+    color: #0A3871;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    padding: 16px;
+    width: 290px;
+    top: 660px;
+    left:640px;
+    right: 30px;
+    font-size: 15px;
+    transition: 950ms;
+
+}
+
+#boton-desencriptar:hover{
+    color: #082e5c;
+    background: #FFFFFF;
+    border: 1px solid #082e5c;
+    font-size: 16px;
+}
+
+
+
+#rectangulo-texto{
+    position: absolute;
+    width: 325px;
+    height: 700px;
+    left: 1000px;
+    top:20px;
+    /* White */
+    padding: 5px;
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 28px;
+}
+#munheco{
+    position: absolute;
+    top: 0px; 
+    width: 90%;
+    height: 90%;
+    right: 15px;
+    object-fit: contain;   
+}
+.mensaje-munheco1{
+    position: absolute;
+    right: 3px;
+    top: 440px;
+    font-weight: bold;
+    font-size: 24px;
+
+    /* or 29px */
+    word-wrap:break-word;
+    text-align: center;
+    
+    /* Gray/gray-500 */
+    
+    color: #343A40;
+    padding: 30px;
+}
+
+.mensaje-munheco2{
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    top: 530px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+}
+
+
+#texto-capturado{
+    position: absolute;
+    padding: 30px;
+}
+#boton-copiar{
+    text-align: center;
+    border-radius: 20px;
+    font-style: normal;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    padding: 16px;
+    top: 640px;
+    left: 30px;
+    right: 30px;
+    font-size: 15px;
+    transition: 900ms;
+}
+
+#boton-copiar:hover{
+    color: #082e5d;
+    background: #DDDDDD;
+    border: 1px solid #082e5c;
+    font-size: 16px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    top: 720px;
+    left: 10px
+}
